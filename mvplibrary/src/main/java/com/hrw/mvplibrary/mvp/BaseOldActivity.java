@@ -39,7 +39,7 @@ public abstract class BaseOldActivity<V extends BaseView, P extends BasePresente
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.base_old_layout);
+        setContentView(R.layout.mine_base_old_layout);
         flContent = (FrameLayout) findViewById(R.id.fl_base_show_content);
 
         rvLoadingError = (RelativeLayout) findViewById(R.id.rl_base_show_error);

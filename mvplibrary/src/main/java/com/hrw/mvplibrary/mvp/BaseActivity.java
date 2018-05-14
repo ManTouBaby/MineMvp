@@ -31,7 +31,7 @@ public abstract class BaseActivity<V extends BaseView, P extends BasePresenter<V
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.base_layout);
+        setContentView(R.layout.mine_base_layout);
         flContent = (FrameLayout) findViewById(R.id.fl_base_show_content);
         rvLoadingError = (RelativeLayout) findViewById(R.id.rl_base_show_error);
         llErrorClick = (LinearLayout) findViewById(R.id.ll_base_loading_error_bt);

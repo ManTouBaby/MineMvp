@@ -43,7 +43,7 @@ public abstract class BaseOldFragment<V extends BaseView, P extends BasePresente
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = View.inflate(getContext(), R.layout.base_old_layout, null);
+        View view = View.inflate(getContext(), R.layout.mine_base_old_layout, null);
 
         flContent = view.findViewById(R.id.fl_base_show_content);
 

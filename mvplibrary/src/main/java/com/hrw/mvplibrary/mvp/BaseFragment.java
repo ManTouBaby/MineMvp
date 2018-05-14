@@ -39,7 +39,7 @@ public abstract class BaseFragment<V extends BaseFragmentView, P extends BasePre
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.base_layout, null);
+        View view = inflater.inflate(R.layout.mine_base_layout, null);
         flContent = view.findViewById(R.id.fl_base_show_content);
         rvLoadingError = view.findViewById(R.id.rl_base_show_error);
         llErrorClick = view.findViewById(R.id.ll_base_loading_error_bt);
