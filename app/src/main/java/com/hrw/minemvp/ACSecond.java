@@ -5,21 +5,27 @@ import android.widget.Button;
 
 import com.hrw.mvplibrary.butterknife.BindView;
 import com.hrw.mvplibrary.mvp.BaseActivity;
-import com.hrw.mvplibrary.mvp.BasePresenter;
 
-public class MainActivity extends BaseActivity implements View.OnClickListener {
-
+/**
+ * @desc:
+ * @author:Hrw
+ * @date:2018/05/17 上午 9:16
+ * @version:1.0.0
+ */
+public class ACSecond extends BaseActivity<ViewSecond, PSecond> implements ViewSecond, View.OnClickListener {
     @BindView(R.id.bt_click_down_app)
     Button btnShow;
 
     @Override
     protected void initData() {
+        mPresenter.mvpTest();
+        btnShow.setText("ACSecond");
         btnShow.setOnClickListener(this);
     }
 
     @Override
-    protected BasePresenter createPresenter() {
-        return null;
+    protected PSecond createPresenter() {
+        return new PSecond();
     }
 
     @Override
@@ -31,9 +37,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.bt_click_down_app:
-//                DownloadHelper.instance(this, 2, "下载测试", "http://apk.gfan.net.cn/index.php?c=api&m=down&src=wap&apk=21000k")
-//                        .setShowProgress(true)
-//                        .start();
+                mPresenter.mvpTest();
                 break;
         }
     }
