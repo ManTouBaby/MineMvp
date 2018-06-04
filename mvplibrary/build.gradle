@@ -45,5 +45,5 @@ dependencies {
 //    implementation 'com.github.bumptech.glide:glide:3.7.0'
 //    implementation 'com.github.ManTouBaby:MineSmartRecyclerView:1.0.2'
     implementation 'com.github.ManTouBaby:MineLoaingAnimView:1.0.1'
-    implementation 'com.github.ManTouBaby:MineDateDialog:1.0.3'
+    implementation 'com.github.ManTouBaby:MineDateDialog:1.0.4'
 }
